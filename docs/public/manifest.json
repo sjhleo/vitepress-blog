@@ -1,0 +1,25 @@
+{
+    "name": "leo",
+    "short_name": "leo",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#2196f3",
+    "description": "leo的个人主页",
+    "theme_color": "blue",
+    "icons": [
+        {
+            "src": "./images/logo.jpg",
+            "sizes": "144x144",
+            "type": "image/jpg"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "web"
+        },
+        {
+            "platform": "play",
+            "url": ""
+        }
+    ]
+}
