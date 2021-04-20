@@ -25,7 +25,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         { text: "概要", link: "/note/" },
-                        { text: "测试", link: "/note/test" }
+                        { text: "异步循环", link: "/note/异步循环" }
                     ]
                 }
             ]
