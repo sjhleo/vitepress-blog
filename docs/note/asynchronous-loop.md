@@ -61,6 +61,24 @@ function test() {
     // p = Promise.resolve().then(() => square(1).then((res) => console.log(res))).then(() => square(2).then((res) => console.log(res))).then(() => square(3).then((res) => console.log(res)))
 }
 ```
+下面这2种写法也可以
+```javascript
+function test() {
+    var p = Promise.resolve();
+    list.reduce((pre, current) => {
+        return pre.then(() => square(current).then(res => console.log(res)));
+    }, p);
+}
+function test() {
+    var p = Promise.resolve();
+    list.reduce(async (pre, current) => {
+        await pre;
+        let result = await square(current);
+        console.log(result);
+        return result;
+    }, p);
+}
+```
 
 看到这道题目的时候自己虽然想到 Promise 的这个解决思路，但是这个链式的组装硬是调试了很久才完全搞定，对 Promise 的掌握还不够熟练。
 
