@@ -1,4 +1,3 @@
 ---
 title: index
 ---
-# note

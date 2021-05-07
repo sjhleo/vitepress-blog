@@ -61,7 +61,9 @@ function test() {
     // p = Promise.resolve().then(() => square(1).then((res) => console.log(res))).then(() => square(2).then((res) => console.log(res))).then(() => square(3).then((res) => console.log(res)))
 }
 ```
+
 下面这2种写法也可以
+
 ```javascript
 function test() {
     var p = Promise.resolve();
