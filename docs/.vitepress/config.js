@@ -9,7 +9,10 @@ module.exports = {
     serviceWorker: true,
     base: "/",
     markdown: {
-        lineNumbers: false
+        lineNumbers: false,
+        config: (md) => {
+            md.use(require("markdown-it-disable-url-encode"));
+        }
     },
     themeConfig: {
         logo: "/images/logo.jpg",

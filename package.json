@@ -11,6 +11,7 @@
     "author": "sjhleo",
     "license": "MIT",
     "dependencies": {
+        "markdown-it-disable-url-encode": "^1.0.1",
         "vitepress": "^0.13.0"
     }
 }
