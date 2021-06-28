@@ -26,7 +26,9 @@ module.exports = {
                     children: [
                         { text: "概要", link: "/note/" },
                         { text: "异步循环", link: "/note/asynchronous-loop" },
-                        { text: "原型链", link: "/note/prototype-chain" }
+                        { text: "原型链", link: "/note/prototype-chain" },
+                        { text: "http", link: "/note/http" },
+                        { text: "https", link: "/note/https" }
                     ]
                 }
             ]
