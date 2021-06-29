@@ -14,9 +14,9 @@ cd docs/.vitepress/dist
 
 git init
 git remote add origin https://github.com/sjhleo/sjhleo.github.io.git
-git branch -M main
 git add -A
 git commit -m 'deploy'
+git branch -M main
 
 # 如果你想要部署到 https://<USERNAME>.github.io
 git push -f https://github.com/sjhleo/sjhleo.github.io.git main
