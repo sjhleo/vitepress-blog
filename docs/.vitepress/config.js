@@ -31,7 +31,9 @@ module.exports = {
                         { text: "异步循环", link: "/note/asynchronous-loop" },
                         { text: "原型链", link: "/note/prototype-chain" },
                         { text: "http", link: "/note/http" },
-                        { text: "https", link: "/note/https" }
+                        { text: "https", link: "/note/https" },
+                        { text: "几种常用模块化方案", link: "/note/module" },
+                        { text: "Proxy", link: "/note/proxy" }
                     ]
                 }
             ]
