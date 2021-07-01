@@ -76,3 +76,10 @@ alert(proxy.get("test")); // 1 (works!)
 原因是专用字段是使用内部插槽实现的。问题和解决方法同上
 
 [参考文章](https://juejin.cn/post/6844904090116292616)
+
+### proxy与Object.defineProperty对比
+
+- proxy可以直接监听对象，而不是属性。
+- Proxy可以直接监听数组的变化，Object.defineProperty不能监听数组。是通过重写数组的那7个可以改变数组的方法来实现对数组进行监听的。
+- proxy有多达13种拦截钩子，apply、ownKeys、has、deleteProperty等是Object.defineProperty无法做到的
+- proxy兼容性较差，无法兼容IE9，使用polyfill也不行。
